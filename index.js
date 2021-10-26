@@ -9,7 +9,7 @@ app.use(cors())
 app.use(router)
 app.listen(port, () => {
     wokeDyno({
-        url: "http://localhost:8080",
+        url: process.env.URL_TRIGGER,
         interval: 60000
     }).start()
     console.log('Connect in server', port)

@@ -1,5 +1,9 @@
 const { requestDataJson } = require("../services/Request")
 
+const start = (request, response) => {
+    response.status(200).send({ connected: true })
+}
+
 const coinsSupplySmall = async (request, response) => {
 
     console.log(request.query)
@@ -20,5 +24,6 @@ const coinsSupplySmall = async (request, response) => {
 }
 
 module.exports = {
-    coinsSupplySmall
+    coinsSupplySmall,
+    start
 }

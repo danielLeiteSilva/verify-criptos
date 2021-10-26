@@ -10,7 +10,7 @@ app.use(router)
 app.listen(port, () => {
     wokeDyno({
         url: process.env.URL_TRIGGER,
-        interval: 60000
+        interval: 1800000
     }).start()
     console.log('Connect in server', port)
 })

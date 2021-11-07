@@ -2,7 +2,7 @@ const Router = require('express').Router()
 
 //Controllers
 const { coinsSupplySmall } = require("./Controllers/VerifySupplyController")
-const twitterComments = require("./Controllers/VerifyIntentController")
+const twitterComments = require("./Controllers/VerifyCommentsTwitterController")
 const keepAlive = require("./Controllers/keepAliveController")
 
 //Endpoints

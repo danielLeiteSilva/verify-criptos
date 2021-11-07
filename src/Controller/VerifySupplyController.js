@@ -1,14 +1,10 @@
-const { requestDataJson } = require("../services/Request")
-
-const start = (request, response) => {
-    response.status(200).send({ connected: true })
-}
+const { supplyRequestData } = require("../Services/SuplyVerifyService")
 
 const coinsSupplySmall = async (request, response) => {
 
     console.log(request.query)
 
-    const resultCoinsRequest = await requestDataJson(process.env.URL_REQUEST)
+    const resultCoinsRequest = await supplyRequestData(process.env.URL_REQUEST)
 
     const coinsDataAnalises = resultCoinsRequest['data']
         .filter(filterPrice => filterPrice['quote']['BRL']['price'] <= request.query.price)
@@ -24,6 +20,5 @@ const coinsSupplySmall = async (request, response) => {
 }
 
 module.exports = {
-    coinsSupplySmall,
-    start
+    coinsSupplySmall
 }

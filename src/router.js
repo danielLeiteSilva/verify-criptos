@@ -1,7 +1,7 @@
 const Router = require('express').Router()
 
 //Controllers
-const { coinsSupplySmall } = require("./Controllers/VerifySupplyController")
+const { coinsSupplySmall } = require("./Controllers/VerifySupplyCoinsMarketCapController")
 const twitterComments = require("./Controllers/VerifyCommentsTwitterController")
 const keepAlive = require("./Controllers/keepAliveController")
 

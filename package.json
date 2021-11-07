@@ -1,6 +1,6 @@
 {
   "name": "verifyCriptos",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,11 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/language": "^4.3.1",
     "axios": "^0.24.0",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "request": "^2.88.2",
+    "twitter-lite": "^1.1.0",
     "woke-dyno": "0.0.4"
   }
 }

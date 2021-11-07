@@ -1,4 +1,4 @@
-const { supplyRequestData } = require("../Services/SuplyVerifyService")
+const { supplyRequestData } = require("../Services/SupplyVerifyService")
 
 const coinsSupplySmall = async (request, response) => {
 
